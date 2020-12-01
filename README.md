@@ -7,7 +7,8 @@ ndemont ([Github](https://github.com/ndemont)) && nboisde ([Github](https://gith
 ### Description:
 :wrench: (building in process)
 
-Printf_tests is a tester for the 42 libft project. It will test your function through the same steps as the correction of the projets requires it for 42.
+Printf_tests is a tester for the 42 printf project. 
+It will test your function through the same steps as the 42 correction of the projets requires.
 1. Simple Conversion
 2. Simple Flags
 3. Complex Flags
