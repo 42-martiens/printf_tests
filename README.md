@@ -21,7 +21,7 @@ Your libft **must have all the function** to make the test run proprerly. You wi
 
 ### Installation:
 ```
-git clone git@github.com:nboisde/Libft_tests.git Libft_tests
+https://github.com/42-martiens/printf_tests.git
 ```
 
 ### Running tests:
