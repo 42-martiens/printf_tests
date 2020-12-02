@@ -1,28 +1,26 @@
 SRCS		=	./srcs/conversion_simple.c \
-			./srcs/flags_avances.c \
-			./srcs/flags_simple.c \
-			./srcs/main.c \
-			./srcs/soyons_fou.c \
-			./srcs/bonus.c \
+				./srcs/flags_avances.c \
+				./srcs/flags_simple.c \
+				./srcs/main.c \
+				./srcs/soyons_fou.c \
+				./srcs/bonus.c \
 
 OBJS		=	${SRCS:.c=.o}
 PRINTF_PATH	=	../
 PRINTF		= 	libftprintf.a
-INCLUDES	=	-I./includes
+INCLUDES	=	-I./includes -I../includes/
 NAME		=	letsgo
-CC		=	gcc
-RM 		=	rm -f
+CC			=	gcc
+RM			=	rm -f
 CFLAGS		=	-Wall -Wextra -Werror
 
 all:		${NAME}
 	
-${NAME}:	${lIBFT} ${OBJS}
-			make -C ${LIBFT_PATH}
+${NAME}:
+			make -C ${PRINTF_PATH}
 			cp ../${PRINTF} .
-			${CC} ${FLAGS} ${OBJS} -L. -lftprintf -c ${NAME}
+			${CC} ${FLAGS} ${SRCS} ${INCLUDES} -L. -lftprintf
 
-.c.o:
-			${CC} ${CFLAGS} ${INCLUDES} -c $< -o ${<:.c=.o}
 clean:
 			@${RM} ${OBJS}
 			@make clean -C ${PRINTF_PATH}

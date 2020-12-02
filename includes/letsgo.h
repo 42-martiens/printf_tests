@@ -3,6 +3,7 @@
 
 # include <stdio.h>
 # include <string.h>
+# include <libc.h>
 
 # ifndef INT_MIN
 #  define INT_MIN -2147483648

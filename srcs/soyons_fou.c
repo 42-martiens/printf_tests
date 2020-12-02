@@ -1,5 +1,4 @@
 #include "printf.h"
-#include "libft.h"
 #include <stdio.h>
 
 # define RED		"\033[31m"
