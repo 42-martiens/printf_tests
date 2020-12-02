@@ -21,6 +21,8 @@ It will test your function through the same steps as the 42 correction of the pr
 Your libft **must have all the function** to make the test run proprerly. You will face compilation issues if it's not the case.
 
 ### Installation:
+
+Git clone this link at the root of your printf project.
 ```
 https://github.com/42-martiens/printf_tests.git
 ```
@@ -28,12 +30,17 @@ https://github.com/42-martiens/printf_tests.git
 ### Running tests:
 ```
 make
-./libft_tests
+./a.out
 ```
-You will have [OK] if your function pass the test, [KO] if it doesn't.
+Both of the outputs will be displayed, just take a look to find differences.
+You will have [OK] if the return of your function is the same as printf, [KO] if it's different.
+
+You can run the tests part by part by passing an argument to a.out :
+
+1 : Simple Conversion ```./a.out 1```
+2 : Simple Flags ```./a.out 2```
+3 : Complex Flags ```./a.out 3```
+4 : Let's get crazy ```./a.out 4```
+5 : Are you ready for bonus ? ```./a.out 5```
 
 If you want to compile again: `make re`
-
-***If you want to see where you crash:***
-
-Each function is tested in the main, using subfunctions in files `~/*/Libft_tests/tests/test_*.c`. Each file handle a particular function and [OK] are often displayed in the same order of tests.
