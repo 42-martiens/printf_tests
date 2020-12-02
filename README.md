@@ -48,3 +48,5 @@ You can run the tests part by part by passing an argument to a.out :
 5 : Are you ready for bonus ? ```./a.out 5```
 
 If you want to compile again: `make re`
+
+If their are warnings during compilation, no worries it is on purpose :smirk:
