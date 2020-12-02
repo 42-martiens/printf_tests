@@ -38,9 +38,13 @@ You will have [OK] if the return of your function is the same as printf, [KO] if
 You can run the tests part by part by passing an argument to a.out :
 
 1 : Simple Conversion ```./a.out 1```
+
 2 : Simple Flags ```./a.out 2```
+
 3 : Complex Flags ```./a.out 3```
+
 4 : Let's get crazy ```./a.out 4```
+
 5 : Are you ready for bonus ? ```./a.out 5```
 
 If you want to compile again: `make re`
