@@ -1,12 +1,4 @@
-#include "printf.h"
-#include "libft.h"
-#include <stdio.h>
-
-int conversion_simple(void);
-int flags_simples(void);
-int flags_avances(void);
-int soyons_fou(void);
-int	bonus(void);
+#include "letsgo.h"
 
 int main(int ac, char **av)
 {
@@ -43,6 +35,11 @@ int main(int ac, char **av)
 	{
 		printf("\n           s o y o n s  f o u s\n");
 		soyons_fou();
+	}
+	else if (ac == 2 && ft_atoi(av[1]) == 5)
+	{
+		printf("\n           b o n u s\n");
+		bonus();
 	}
 	return (0);
 }

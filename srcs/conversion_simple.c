@@ -1,5 +1,4 @@
 #include "printf.h"
-#include "libft.h"
 #include <stdio.h>
 
 # define RED		"\033[31m"
@@ -133,8 +132,8 @@ int conversion_simple()
 		printf("printf = %d\nft_printf = %d\n%s%s%s", ret, ret2, RED, " KO\n", DEFAULT);
 
 
-	ret =  printf("Test int i : [%i]\n", INT_MIN);
-	ret2 =  ft_printf("Test int i : [%i]\n", INT_MIN);
+	ret =  printf("Test int i : [%i]\n", -0);
+	ret2 =  ft_printf("Test int i : [%i]\n", -0);
 	if (ret == ret2)
 		printf("   %s%s%s", GREEN, "OK\n", DEFAULT);
 	else
